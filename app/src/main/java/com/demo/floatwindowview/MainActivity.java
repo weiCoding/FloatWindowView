@@ -17,9 +17,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        FloatViewManager.getInstance().showFloatView(this);
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        FloatViewManager.getInstance().showFloatView(this);
+    }
 
     public void onClick(View view) {
         Intent intent = new Intent();

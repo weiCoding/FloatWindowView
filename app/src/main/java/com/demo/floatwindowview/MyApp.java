@@ -70,7 +70,7 @@ public class MyApp extends Application implements Application.ActivityLifecycleC
 
     @Override
     public void onActivityDestroyed(@NonNull Activity activity) {
-
+        Log.e("MyApp", activity.getClass().getSimpleName());
     }
 
     public void setBackgroundListener(OnBackgroundListener listener) {
