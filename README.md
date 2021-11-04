@@ -1,0 +1,3 @@
+# FloatWindowView
+悬浮于全局页面的可滑动的浮层view
+通过在WindowManager上添加自定义view实现全局的自定义浮层，同时根据用户在屏幕上拖动的位置更新WindowManager params来实现自定义浮层的全局滑动。
